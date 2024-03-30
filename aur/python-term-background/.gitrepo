@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://aur.archlinux.org/python-term-background.git
+	branch = master
+	commit = d630c95058da6ba7b62945a6f9c07d2ed2df1a7d
+	parent = c34be31a2f3448b63994cc7611e6cfdca720ab90
+	method = merge
+	cmdver = 0.4.6
