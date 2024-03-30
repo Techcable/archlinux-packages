@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://aur.archlinux.org/dis4irc.git
+	branch = master
+	commit = d0c746ecedc0f24f09f0ee562bf0f25da61f3d27
+	parent = fbfbdaa914bd2765facc7e29270b6d93b8ebd2b5
+	method = merge
+	cmdver = 0.4.6
