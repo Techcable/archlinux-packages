@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://aur.archlinux.org/mathics-pygments.git
+	branch = master
+	commit = b3d739fa4cfe5d3e2a33edb20dcaa2ba443f685e
+	parent = 3dfa67cfc3864a23ec43f46f9ba2657276f2f37b
+	method = merge
+	cmdver = 0.4.6
