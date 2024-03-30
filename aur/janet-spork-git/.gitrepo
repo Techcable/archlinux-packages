@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://aur.archlinux.org/janet-spork-git.git
+	branch = master
+	commit = 5408a526450c89b232d5ddd1d4a26e79dbd9144d
+	parent = 34eb194b0e0e1aa362a8dc55fff41fa323652eae
+	method = merge
+	cmdver = 0.4.6
