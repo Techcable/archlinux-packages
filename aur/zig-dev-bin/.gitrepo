@@ -4,7 +4,7 @@
 ; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
 ;
 [subrepo]
-	remote = https://aur.archlinux.org/zig-dev-bin.git
+	remote = ssh://aur@aur.archlinux.org/zig-dev-bin.git
 	branch = master
 	commit = fc98681aa894840a7869f0a814fec398b403d249
 	parent = 25d923efc68b1fddd2012ff558416b272a5d6ace

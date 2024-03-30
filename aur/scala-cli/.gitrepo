@@ -4,7 +4,7 @@
 ; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
 ;
 [subrepo]
-	remote = https://aur.archlinux.org/scala-cli.git
+	remote = ssh://aur@aur.archlinux.org/scala-cli.git
 	branch = master
 	commit = f6270bcdb92da47b062207ce77896c8891656bee
 	parent = 145406c374b4646bf9be5dc78dd295d54206d701

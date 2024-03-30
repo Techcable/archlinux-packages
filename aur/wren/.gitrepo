@@ -4,7 +4,7 @@
 ; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
 ;
 [subrepo]
-	remote = https://aur.archlinux.org/wren.git
+	remote = ssh://aur@aur.archlinux.org/wren.git
 	branch = master
 	commit = fcb280896f9df6d78213ae55f81cb10b9221c70d
 	parent = 639f36ff3349c0e31c05511470ebb7a466255429
