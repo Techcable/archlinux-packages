@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/dis4irc.git
 	branch = master
-	commit = d0c746ecedc0f24f09f0ee562bf0f25da61f3d27
-	parent = fbfbdaa914bd2765facc7e29270b6d93b8ebd2b5
+	commit = 35fd633ce97e5cdb5b0e8ee71269f37a6afb6010
+	parent = d25af72118d976a1d24819a6f9b6046b7dfc371e
 	method = merge
 	cmdver = 0.4.6
