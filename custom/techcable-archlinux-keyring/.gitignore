@@ -1,0 +1,5 @@
+# makepkg
+/pkg
+/src
+/techcable-archlinux-keyring
+/*.pkg.tar.*

@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = git@git.sr.ht:~techcable/archlinux-keyring-package
+	branch = master
+	commit = 62af2e9b577ea40412c351081e2d05e4791616fd
+	parent = 75237cced63c232673b15c5d83cffe6367f02369
+	method = merge
+	cmdver = 0.4.6

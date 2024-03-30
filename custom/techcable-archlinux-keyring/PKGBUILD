@@ -1,0 +1,38 @@
+# Maintainer: Techcable <git at techcable.net>
+
+pkgname=techcable-archlinux-keyring
+pkgver=0.20240329.1
+pkgrel=2
+pkgdesc="Keyring for Techcable's archlinux packages & repository"
+url="https://git.sr.ht/~techcable/archlinux-keyring"
+arch=('any')
+license=('GPL-3.0-or-later')
+install=techcable-archlinux-keyring.install
+depends=('pacman' 'gnupg' 'bash')
+makedepends=('git' 'python' 'sequoia-sq')
+options=(!strip !debug)
+source=("techcable-archlinux-keyring::git+https://git.sr.ht/~techcable/archlinux-keyring#tag=v${pkgver}?signed")
+sha256sums=('5ccb896677069a3df28bc18c0de9418ed0c465684e769e341824c729673a09a4')
+# Releases of the keyring package are always signed with a master key
+validpgpkeys=('461EC66E284C8E7681789F12091A03B91D7FCE68')  # Techcable <Techcable@techcable.net>
+
+prepare() {
+    pushd "$srcdir/$pkgname";
+    git submodule update --init;
+    popd;
+}
+
+# TODO: Implement a `check` function
+
+build() {
+    pushd "$srcdir/$pkgname";
+    python3 ./build.py build
+    popd;
+}
+
+package() {
+	pushd "$srcdir/$pkgname";
+    python3 ./build.py install --dest-dir "$pkgdir";
+    popd;
+}
+

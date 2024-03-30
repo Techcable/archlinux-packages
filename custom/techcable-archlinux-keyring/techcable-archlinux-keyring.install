@@ -1,0 +1,28 @@
+#!/bin/bash
+
+post_upgrade() {
+    local keyring_name="techcable";
+    local pkgname="$keyring_name-keyring";
+    for required_cmd in "pacman-key" "gpg"; do
+        if [[ ! -x "usr/bin/$required_cmd" ]]; then
+            echo "ERROR: Missing required command: \`${required_cmd}\`" >&2;
+            exit 1;
+        fi
+    done;
+    local pacman_gpgdir;
+    pacman_gpgdir="$(/usr/bin/pacman-conf GPGDir)";
+    if [[ ! -d "$pacman_gpgdir" ]]; then
+        echo "ERROR: Unable to load \`GPGDir\` from pacman.conf: \`${pacman_gpgdir}\`" >&2;
+        exit 1;
+    fi;
+    echo "[$pkgname]: Populating pacman keyring" >&2;
+    usr/bin/pacman-key --populate "$keyring_name"
+    echo "[$pkgname]: Updating pacman's ownertrust of master keys">&2;
+    usr/bin/gpg --homedir "$pacman_gpgdir" --import-ownertrust "usr/share/pacman/keyrings/$keyring_name-trusted"
+    echo "[$pkgname]: Refreshing trust db" >&2;
+    usr/bin/pacman-key --updatedb
+}
+
+post_install() {
+    post_upgrade
+}
