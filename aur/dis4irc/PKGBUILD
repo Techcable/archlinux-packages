@@ -6,8 +6,8 @@
 # This package uses precompiled jar files, see README.md for justification
 
 pkgname=dis4irc
-pkgver=1.6.0
-pkgrel=2
+pkgver=1.6.2
+pkgrel=1
 pkgdesc="A modern Discord <-> IRC bridge"
 arch=('any') # Java :)
 url="https://github.com/zachbr/Dis4IRC"
@@ -36,8 +36,8 @@ noextract=(
     # Jar is just a zip file, and we do *NOT* want it extracted
     "Dis4IRC-${pkgver}.jar"
 )
-sha256sums=('b434f30a5a9385bd1f7a4bfe07c52dddce2b4e5ce1f504538a59b516696a8d66'
-            '83b67788944ef1f866a6f1bbaac495b4ea10a9ebed850e9747ba05389216c6d3'
+sha256sums=('631bd64425a66561816d5deacb63cd8b0cc7ca089487f8dabb65584623b79a32'
+            '3b0e019e48300b84a62273422b1deda67d548d38d5037fd94a0f2af54c96d4c8'
             'd8c07815db79c8e9e6d9dec5fe2bca2fe3d1ed11470f4eb232c0bce7c87e2a4d'
             'fe49b0c125e69433b91be596cd627424f464e609d39996693ae017889f2b31c4')
 
