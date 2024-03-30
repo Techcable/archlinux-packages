@@ -1,7 +1,7 @@
 pkgbase = techcable-archlinux-keyring
 	pkgdesc = Keyring for Techcable's archlinux packages & repository
 	pkgver = 0.20240329.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://git.sr.ht/~techcable/archlinux-keyring
 	install = techcable-archlinux-keyring.install
 	arch = any
@@ -10,6 +10,8 @@ pkgbase = techcable-archlinux-keyring
 	makedepends = python
 	makedepends = sequoia-sq
 	depends = pacman
+	depends = gnupg
+	depends = bash
 	options = !strip
 	options = !debug
 	source = techcable-archlinux-keyring::git+https://git.sr.ht/~techcable/archlinux-keyring#tag=v0.20240329.1?signed
