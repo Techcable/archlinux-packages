@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://aur.archlinux.org/python-columnize.git
+	branch = master
+	commit = ff614873a3a673c0329b6e4f11a9b0c0db0d5e70
+	parent = 39b9ad9d2c9b9f168cd747d5345149b991070ae4
+	method = merge
+	cmdver = 0.4.6
