@@ -1,0 +1,9 @@
+pre-push:
+  # Before pushing, verify all PKGBUILD files have correct .SRCINFO state
+  #
+  # This seems to work properly even with git-subrepo push
+  commands:
+    check-srcinfo:
+      glob: "PKGBUILD"
+      run: python scripts/confirm-srcinfo.py {push_files}
+
