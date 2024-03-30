@@ -1,6 +1,6 @@
 # Maintainer: Techcable <$USERNAME at techcable.net>
 
-# This package is mirored on github at Techcable/aur-dis4irc
+# This package is mirored on github at Techcable/archlinux-packages
 # PRs and issues welcome
 
 # This package uses precompiled jar files, see README.md for justification
