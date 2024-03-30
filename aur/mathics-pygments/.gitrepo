@@ -6,7 +6,7 @@
 [subrepo]
 	remote = ssh://aur@aur.archlinux.org/mathics-pygments.git
 	branch = master
-	commit = b3d739fa4cfe5d3e2a33edb20dcaa2ba443f685e
-	parent = 3dfa67cfc3864a23ec43f46f9ba2657276f2f37b
+	commit = 1042991007e9e84e9f449f1cb0414292931b6908
+	parent = 67af5ef2ccf0083d16b2421b01fcc3c345e6a12b
 	method = merge
 	cmdver = 0.4.6
